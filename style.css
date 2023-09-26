@@ -1,34 +1,37 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: -10px;
+    padding: -10px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+  
 }
 
 
 body {
-    background-image: url(images/national_day-removebg-preview.png);
     background-color: #BDE5F0;
-    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    height: 100;
 }
 
 .container {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 245px;
+    height: 245px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-top: 410px;
-
+    margin-top: 260px;
+    margin-right: -400px;
+    margin-left: 360px;
 }
 
 .container .spinBtn {
-    top: -55%;
+    top: -75%;
+    right: 5px;
+    left: 110px;
     position: absolute;
     width: 40px;
     height: 40px;
@@ -39,7 +42,7 @@ body {
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 300;
     color: #333;
     letter-spacing: 0.1em;
     cursor: pointer;
@@ -57,10 +60,10 @@ body {
 }
 
 .container .wheel .accomp {
-
+        
     position: absolute;
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
     background: var(--clr);
     transform-origin: bottom right;
     transform: rotate(calc(60deg * var(--i)));
@@ -74,17 +77,19 @@ body {
 
 }
 
-.container .wheel .accomp span {
+.container .wheel .accomp button {
+    justify-content: center;
+    justify-items:center ;
     transform: rotate(60deg);
-    font-size: 1.30em;
+    font-size: 1em;
     font-weight: 300;
-    color: #fff;
-    text-shadow: 3px 5px 2px rgba(0, 0, 0, 0.15);
+   
+    
 }
 
 
 .container .wheel {
-    border: dotted 15px white;
+    border: dotted 10px white;
     position: absolute;
     top: -290px;
     left: 0;
@@ -94,32 +99,31 @@ body {
     border-radius: 50%;
     overflow: hidden;
     transition: transform 5s ease-in-out;
+    justify-content: center;
+    justify-items: center;
 }
 
 .container .wheel .accomp span::after {
+    justify-content: center;
+    justify-items: center;
     content: '';
     position: absolute;
-    font-size: 1.75em;
-    font-weight: 600;
+    font-size: 1;
+    font-weight: 300;
 
 
 }
 
 
 .holder {
-    top: -360%;
+    top: -280%;
     position: absolute;
     background-color: #F4B400;
-    width: 60px;
-    height: 80px;
+    width: 50px;
+    height: 60px;
     overflow: hidden;
-    z-index: -2;
+    z-index: -3;
     clip-path: polygon(50% 14%, 76% 25%, 51% 100%, 25% 25%);
-
-
-
-
-
 }
 
 .holder::before {
@@ -131,3 +135,25 @@ body {
 
 
 }
+
+.dimg {
+    margin-top: 200px;
+    height: 100px;
+}
+
+h1{
+
+    font-size: 20px;
+    color: #fff;
+   
+}
+h2{
+    font-size: 20px;
+    color: #fff;
+    
+}
+section{
+    justify-content: center;
+    justify-items: center;
+}
+
