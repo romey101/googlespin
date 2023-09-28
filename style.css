@@ -8,6 +8,8 @@
 
 
 body {
+    background-image: url(images/Untitled\ design\ \(1\).png);
+    background-size: 100% 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,8 +19,8 @@ body {
 
 .container {
     position: relative;
-    width: 245px;
-    height: 245px;
+    width: 600px;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,8 +28,8 @@ body {
 
 .container .spinBtn {
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 150px;
+    height: 150px;
     background: #BDE5F0;
     border-radius: 50%;
     z-index: 10;
@@ -73,13 +75,13 @@ body {
     height: 50%;
     background: var(--clr);
     transform-origin: bottom right;
-    transform: rotate(calc(59deg * var(--i)));
+    transform: rotate(calc(60deg * var(--i)));
     display: flex;
     justify-content: center;
     align-items: center;
     user-select: none;
     cursor: pointer;
-    clip-path: polygon(0 0, 60% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 60% 0, 100% 100%, 0 150%);
 
 
 }
@@ -95,31 +97,33 @@ body {
 }
 
 
-.container .wheel .accomp span {
+.container .wheel .accomp  a {
     position: relative;
     transform: rotate(45deg);
     font-size: 1;
     font-weight: 300;
+    color: black;
 
 
 }
 
-.container .wheel .accomp span::after {
+.container .wheel .accomp  a::after {
     content: '';
     position: absolute;
     font-size: 1;
     font-weight: 300;
+    color: black;
 
 
 }
 
 
 .holder {
-    top: -180%;
+    top: -170%;
     position: absolute;
     background-color: #2f7d4e;
-    width: 50px;
-    height: 60px;
+    width: 100px;
+    height: 120px;
     overflow: hidden;
     z-index: -3;
     clip-path: polygon(50% 14%, 76% 25%, 51% 100%, 25% 25%);
@@ -133,4 +137,12 @@ body {
     border-radius: 50%;
 
 
+}
+
+@media screen {
+   body{
+    background-image: url(images/Untitled\ design\ \(1\).png);
+   background-size: 100% 100%;
+   }
+    
 }
