@@ -3,32 +3,48 @@
 
 <head>
     <title>spin wheel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" typr="text/css" href="style.css">|
 </head>
 
 <body>
 
+    <div class="bulit"></div>
 
 
     <div class="container">
 
         <div class="spinBtn">
             <div class="holder"></div><img src="images/google-developers-logo-F8BF3155AC-seeklogo.com.png" alt=""
-                width="40px" height="25px">
+                width="80px" height="50px">
         </div>
         <div class="wheel">
-            <div class="accomp" style="--i:1;--clr:#4285F4;"> <a href="index.html"><span>IMD</span></a></a></div>
-            <div class="accomp" style="--i:2;--clr:#F4B400;"><span>Tortoise</span></div>
-            <div class="accomp" style="--i:3;--clr:#DB4437;"><span> ITEX</span></div>
-            <div class="accomp" style="--i:4;--clr:#4285F4;"><span> FLL</span></div>
-            <div class="accomp" style="--i:5;--clr:#F4B400;"><span> IMD</span></div>
-            <div class="accomp" style="--i:6;--clr:#DB4437;"><span> IMD</span></div>
+            <div class="accomp" style="--i:1;--clr:#4285F4;"><span>
+                <a href="enjaz.html">IMD</a>
+            </span></div>
+            <div class="accomp" style="--i:2;--clr:#F4B400;"><span>
+                <a href="enjaz.html">TORTOISE</a>
+            </span></div>
+            <div class="accomp" style="--i:3;--clr:#DB4437;"><span>
+                <a href="enjaz.html">ITEX</a>
+            </span></div>
+            <div class="accomp" style="--i:4;--clr:#4285F4;"><span>
+                <a href="enjaz.html">FLL</a>
+            </span></div>
+            <div class="accomp" style="--i:5;--clr:#F4B400;"><span>
+                <a href="enjaz.html">ISEF</a>
+            </span></div>
+            <div class="accomp" style="--i:6;--clr:#DB4437;"><span>
+                <a href="enjaz.html">DISPLAY WEEK</a>
+            </span></div>
         </div>
     </div>
 
 
-
     <script>
+        
+
         let wheel = document.querySelector('.wheel');
         let spinBtn = document.querySelector('.spinBtn');
         let value = Math.ceil(Math.random() * 3600);
@@ -37,6 +53,49 @@
             wheel.style.transform = "rotate(" + value + "deg)";
             value += Math.ceil(Math.random() * 3600);
         }
+
+        //     if(hod === 'link'){
+        //     setTimeout(() => {
+        //         window.open('https://www.google.com')
+        //     }, 2000)
+        // }
+            
+        
+        // spinBtn.onclick = function () {
+        //     wheel.style.transform = "rotate(" + value + "deg)";
+        //     value += Math.ceil(Math.random() * 3600);
+        
+        // let x = document.querySelector('.accomp');
+        // x.onclick = function () {
+        //     location.href = './images/google-developers-logo-F8BF3155AC-seeklogo.com.png'
+        // }
+
+        // let wheel = document.querySelector('.wheel');
+        // let spinBtn = document.querySelector('.spinBtn');
+        // let value = Math.ceil(Math.random() * 3600);
+
+        // spinBtn.onclick = function () {
+            // var winningSlice = Math.floor(degrees / segmentAngle) % segments + 1;
+            // wheel.style.transform = "rotate(" + value + "deg)";
+            // value += Math.ceil(Math.random() * 3600);
+            // alert('Congratulations! You won prize ' + winningSlice + '!');
+    //         var degrees = Math.floor(Math.random() * 360) + 1440;
+    // var wheel = document.querySelector('.wheel');
+
+    // wheel.style.transition = 'transform 4s ease-out';
+    // wheel.style.transform = 'rotate(' + degrees + 'deg)';
+
+    // setTimeout(function() {
+    // var segments = 12;
+    // var segmentAngle = 360 / segments;
+    // var winningSlice = Math.floor(degrees / segmentAngle) % segments + 1;
+    // alert('Congratulations! You won prize ' + winningSlice + '!');
+    // Window.open(URL('./images/google-developers-logo-F8BF3155AC-seeklogo.com.png'))
+    // wheel.style.transition = 'none';
+    // wheel.style.transform = 'rotate(0deg)';
+    
+    // }, 4000);
+    //     }
     </script>
 </body>
 
